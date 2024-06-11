@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoteriaKawai.MainPage"
+             Title="Selecciona tu carta">
+
+        <StackLayout
+            Spacing="25"
+            Padding="30,0"
+            Margin="{OnPlatform Android=20, iOS=0}"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+            <Button Text="Cambiar Carta" Command="{Binding CreateNewCardCommand}"
+                    Margin="5"
+                    HorizontalOptions="StartAndExpand"/>
+            <Button Text="Utilizar esta" Command="{Binding SelectedCardCommand}"
+                    Margin="5"
+                    HorizontalOptions="EndAndExpand"/>
+
+        </HorizontalStackLayout>
+        
+        <Frame Padding="5">
+            
+           
+        <Grid HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand"
+              >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--row 1-->
+            <Frame 
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C1}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <Frame 
+                   Grid.Column="1"
+                   Grid.Row="0"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C2}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <Frame 
+                   Grid.Column="2"
+                   Grid.Row="0"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C3}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <Frame 
+                   Grid.Column="3"
+                   Grid.Row="0"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C4}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <!--row 2-->
+            <Frame 
+                   Grid.Column="0"
+                   Grid.Row="1"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C5}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <Frame 
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C6}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <Frame 
+                   Grid.Column="2"
+                   Grid.Row="1"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                  CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C7}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <Frame 
+                   Grid.Column="3"
+                   Grid.Row="1"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C8}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <!--row 3-->
+            <Frame 
+                   Grid.Column="0"
+                   Grid.Row="2"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C9}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <Frame 
+                   Grid.Column="1"
+                   Grid.Row="2"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C10}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <Frame 
+                   Grid.Column="2"
+                   Grid.Row="2"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                  CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C11}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <Frame 
+                   Grid.Column="3"
+                   Grid.Row="2"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C12}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <!--row 4-->
+            <Frame 
+                   Grid.Column="0"
+                   Grid.Row="3"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C13}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <Frame 
+                   Grid.Column="1"
+                   Grid.Row="3"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C14}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <Frame 
+                   Grid.Column="2"
+                   Grid.Row="3"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                  CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C15}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+            <Frame 
+                   Grid.Column="3"
+                   Grid.Row="3"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                <Image Source="{Binding C16}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
+            </Frame>
+        </Grid>
+        </Frame>
+    </StackLayout>
+    
+
+</ContentPage>

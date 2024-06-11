@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoteriaKawai.Views.CardSelectedPage"
+             Title="A Jugar">
+    <StackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+       
+        <Frame Padding="5">
+
+
+            <Grid HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand"
+              >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--row 1-->
+                <Frame x:Name="n1"
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f1"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C1}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F1b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                    
+                </Frame>
+                <Frame 
+                   Grid.Column="1"
+                   Grid.Row="0"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f2"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C2}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F2b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <Frame 
+                   Grid.Column="2"
+                   Grid.Row="0"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f3"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C3}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F3b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <Frame 
+                   Grid.Column="3"
+                   Grid.Row="0"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f4"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C4}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F4b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <!--row 2-->
+                <Frame 
+                   Grid.Column="0"
+                   Grid.Row="1"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f5"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C5}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F5b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <Frame 
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f6"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C6}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F6b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <Frame 
+                   Grid.Column="2"
+                   Grid.Row="1"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                  CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f7"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C7}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F7b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <Frame 
+                   Grid.Column="3"
+                   Grid.Row="1"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f8"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C8}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F8b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <!--row 3-->
+                <Frame 
+                   Grid.Column="0"
+                   Grid.Row="2"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f9"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C9}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F9b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <Frame 
+                   Grid.Column="1"
+                   Grid.Row="2"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f10"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C10}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F10b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <Frame 
+                   Grid.Column="2"
+                   Grid.Row="2"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                  CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f11"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C11}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F11b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <Frame 
+                   Grid.Column="3"
+                   Grid.Row="2"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f12"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C12}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F12b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <!--row 4-->
+                <Frame 
+                   Grid.Column="0"
+                   Grid.Row="3"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f13"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C13}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F13b}"
+                               HeightRequest="40"
+                               Source="f1"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <Frame 
+                   Grid.Column="1"
+                   Grid.Row="3"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f14"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C14}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F14b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <Frame 
+                   Grid.Column="2"
+                   Grid.Row="3"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                  CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f15"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C15}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F15b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+                <Frame 
+                   Grid.Column="3"
+                   Grid.Row="3"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   CornerRadius="5"
+                   Margin="5"
+                   Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BeanCheckedCommand}" CommandParameter="f16"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding C16}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                        <Image IsVisible="{Binding F16b}"
+                               Source="f1"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               Aspect="Fill"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </Frame>
+        <Button Text="Quitar frijolitos" Command="{Binding RemoveBeansCommand}"
+                HorizontalOptions="CenterAndExpand"/>
+    </StackLayout>
+</ContentPage>
